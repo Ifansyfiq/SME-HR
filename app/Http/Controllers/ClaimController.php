@@ -118,7 +118,7 @@ class ClaimController extends Controller
     {
         // Update employee info from the database
         $updateInfo = ClaimRecord::findOrFail($id);
-
+        
         $validatedData = $request->validate([
             'user_id' => 'required',
             'date' => 'required',
